@@ -1,0 +1,44 @@
+Struktur 
+    <form method="post" action='https://register-demo.freecodecamp.org'>
+      <fieldset>
+        <label for="first-name">Enter Your First Name: <input id="first-name" name="first-name" type="text" required /></label>
+      </fieldset>
+    </form>
+    <label for="referrer">How did you hear about us?
+          <select id="referrer" name="referrer">
+            <option value="">(select one)</option>
+          </select>
+    </label>
+
+    Analisis pattern="[a-z0-5]{8,}"
+        [a-z0-5] → Hanya boleh menggunakan huruf kecil (a-z) dan angka (0-5).
+        {8,} → Minimal 8 karakter (tidak ada batas maksimal).
+
+CSS
+    fieldset:last-of-type {
+        border-bottom: none;
+    }
+    -> Pseudo-class ini memilih elemen 
+       <fieldset> terakhir dalam parent-nya 
+       (bukan berdasarkan class atau id, tetapi 
+       berdasarkan jenis elemen).
+
+    width: unset;
+    -> Mengembalikan lebar input ke nilai defaultnya, 
+       sesuai dengan properti bawaan browser.
+    -> Biasanya, input radio memiliki lebar otomatis, 
+       jadi ini memastikan tidak ada pengaruh dari CSS lain 
+       yang mengubah lebarnya.
+
+    vertical-align: middle;
+    -> Menjaga posisi radio button agar berada di tengah 
+       secara vertikal terhadap teks "Personal" dan "Business".
+    -> Tanpa ini, input radio bisa sedikit turun ke bawah atau 
+       ke atas tergantung pada font labelnya.
+
+    display: block:
+    -> Pindah ke baris baru
+
+    input[type="submit"] {   
+    }
+    -> Cara untuk memilih input type di css

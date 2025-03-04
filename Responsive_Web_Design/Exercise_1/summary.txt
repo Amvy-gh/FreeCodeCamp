@@ -1,0 +1,16 @@
+Struktur untuk inputan 
+ 
+    Form
+        -   Fieldset
+            -  Legend
+                - Label 
+                    > Input
+            - Legend
+                - Label 
+                    > Input
+        -   Fieldset
+    Form
+
+ol>li digunakan untuk list nomor
+use figure > figcaption 
+<em> for italic
