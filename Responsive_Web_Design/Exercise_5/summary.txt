@@ -1,7 +1,0 @@
-CSS
-    filter: blur(2px); 
-        → Sedikit blur untuk efek lukisan klasik.
-    overflow: hidden; 
-        → Mencegah elemen keluar dari area canvas.
-    transform: rotate(-0.6deg); 
-        → Postif kanan, Negatif kiri
