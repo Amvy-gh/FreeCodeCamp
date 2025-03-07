@@ -16,3 +16,20 @@ Elemen Semantik	  |     Elemen Non-Semantik
     <article>     |      <div class="article">
 
 
+Fungsi region :
+     Digunakan untuk membantu aksesibilitas dengan menandai bagian penting dalam halaman web.
+    ✅ Membantu pembaca layar (screen reader) mengenali bagian penting.
+    ✅ Harus memiliki judul yang bisa diakses dengan aria-labelledby.
+
+
+<textarea id="css-textarea" name="css-questions" rows="5" cols="24"></textarea>
+    ✅ rows="5" → Menentukan tinggi area teks sebanyak 5 baris
+    ✅ cols="24" → Menentukan lebar area teks sebanyak 24 karakter
+
+h3 {
+    counter-increment: question-counter;
+}
+h3::before {
+    content: "Question #" counter(question-counter) ": ";
+}   
+     Ini akan menambahkan nomor otomatis ke setiap <h3>.
